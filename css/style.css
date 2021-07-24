@@ -1,0 +1,20 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px;
+}
+
+body, html {
+  background: url("../images/pexels-lumn-316466.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+input[type=text] {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#story {
+  font-family: 'Quicksand', sans-serif;
+}
