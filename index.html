@@ -20,48 +20,75 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <p>
-          Give me a title and up to 5 words, and I will write a story for you.
-        </p>
-        <form>
-          <div class="form-group">
-            <label>
-              Title
-            </label>
-            <div>
-              <input type="text" name="title" autocomplete="off">
-            </div>
-          </div>
-          <div class="form-group">
-            <label>
-              Storyline (up to 5 words)
-            </label>
-            <div>
-              <input type="text" name="storyline" autocomplete="off">
-              <input type="text" name="storyline" autocomplete="off">
-              <input type="text" name="storyline" autocomplete="off">
-              <input type="text" name="storyline" autocomplete="off">
-              <input type="text" name="storyline" autocomplete="off">
-            </div>
-          </div>
-          <input type="submit" class="btn btn-primary" value="Write">
-        </form>
-        <small>
-          <p></p>
-          <p>
-            Note 1: It may take a few seconds to run.
-          </p>
-          <p>
-            Note 2: This prototype is built on top of
-            <a href="https://huggingface.co/t5-small" target="_blank">Google's T5 model</a>.
-            We haven't implemented any filter or detection against potential offensive output.
-          </p>
-        </small>
-        <div>
-          <textarea id="story" rows="10" cols="100" readonly></textarea>
-        </div>
+        Give me a title and up to 5 words, and I will write a story for you.
+        <p></p>
       </div>
     </div>
+    <form>
+      <div class="row">
+        <div class="col-md-12">
+          <label>
+            Title
+          </label>
+          <div class="form-group">
+            <input type="text" name="title" autocomplete="off">
+            <div>
+              <small>e.g., Coffee shop</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label>
+            Storyline (up to 5 words)
+          </label>
+          <div class="form-group">
+            <div class="more-word">
+              <input type="text" name="storyline" autocomplete="off">
+              <div>
+                <small>e.g., Tom</small>
+              </div>
+            </div>
+            <div class="more-word">
+              <input type="text" name="storyline" autocomplete="off">
+              <div>
+                <small>e.g., coffee</small>
+              </div>
+            </div>
+            <div class="more-word">
+              <input type="text" name="storyline" autocomplete="off">
+            </div>
+            <div class="more-word">
+              <input type="text" name="storyline" autocomplete="off">
+            </div>
+            <div class="more-word">
+              <input type="text" name="storyline" autocomplete="off">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 20px">
+        <div class="col-md-12">
+          <input type="submit" class="btn btn-primary" value="Write">
+          <input type="reset" class="btn btn-primary" value="Clear">
+        </div>
+      </div>
+      <small>
+        <p></p>
+        <p>
+          Note 1: It may take a few seconds to run.
+        </p>
+        <p>
+          Note 2: This prototype is built on top of
+          <a href="https://huggingface.co/t5-small" target="_blank">Google's T5 model</a>.
+          We haven't implemented any filter or detection against potential offensive output.
+        </p>
+      </small>
+      <div>
+        <textarea id="story" rows="10" cols="100" readonly></textarea>
+      </div>
+    </form>
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

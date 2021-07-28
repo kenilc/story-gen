@@ -1,6 +1,6 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  margin: 10px;
+  margin: 8px;
 }
 
 body, html {
@@ -17,4 +17,9 @@ input[type=text] {
 
 #story {
   font-family: 'Quicksand', sans-serif;
+}
+
+.more-word {
+  float: left;
+  padding-right: 2px;
 }
