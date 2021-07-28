@@ -9,7 +9,10 @@ form.onsubmit = async (e) => {
     storyline: formData.getAll('storyline')
   }
 
-  await fetch('http://localhost:5000/api/v1/write', {
+  const ip = '34.70.185.61'
+  const port = 8000
+
+  await fetch(`http://${ip}:${port}/api/v1/write`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8'
